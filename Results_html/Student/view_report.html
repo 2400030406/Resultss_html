@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reports</title>
+    <link rel="stylesheet" href="styles/report.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Reports</h1>
+
+    <div class="filters">
+        <label for="year">Academic Year:</label>
+        <select id="year" name="year">
+            <option value="">-- Select Year --</option>
+            <option value="2024-2025">2024 - 2025</option>
+            <option value="2023-2024">2023 - 2024</option>
+            <option value="2022-2023">2022 - 2023</option>
+        </select>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester">
+            <option value="">-- Select Semester --</option>
+            <option value="sem1">Semester 1</option>
+            <option value="sem2">Semester 2</option>
+        </select>
+
+        <button type="button">Generate Report</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Report Title</th>
+                <th>Date Generated</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Attendance Report</td>
+                <td>12 Aug 2025</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>Performance Report</td>
+                <td>10 Aug 2025</td>
+                <td><a href="#">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

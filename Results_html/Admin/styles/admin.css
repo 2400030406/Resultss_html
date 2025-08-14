@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to left, #9CAFAA, #ffffff);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.main-card {
+    background:#fff;
+    border-radius: 30px;
+    border: 3px solid #131313;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.main-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: 3px solid #5a5858;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.main-card p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000;
+}
+
+.main-card:hover {
+    background: radial-gradient(rgb(183, 175, 227), #8cd2ee);
+    transform: scale(1.1);
+}
+
+.main-card:hover img {
+    transform: scale(1.1);
+}

@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to left, #9CAFAA, #ffffff);
+}
+
+.card-heading {
+    text-align: center;
+    font-size: 45px;
+    color: #f3f2f2;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-img {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #5a5858;
+    border-radius: 12px;
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, border 0.3s ease, background 0.3s ease;
+}
+
+.card-img:hover {
+    border: 2px solid #7A85C1;
+    background: radial-gradient(rgb(183, 175, 227), #8cd2ee);
+    transform: scale(1.2);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    background-color: rgb(250, 248, 249);
+    border: 2px solid #0b29d7;
+    border-radius: 16px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+    border: 2px solid #7A85C1;
+    background: radial-gradient(rgb(183, 175, 227), #8cd2ee);
+    transform: scale(1.1);
+}
+
+.list-style {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+.list-style li {
+    background-color: #f3f2f2;
+    color: #4A9782;
+    padding: 10px 12px 10px 40px;
+    box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border-radius: 16px;
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.list-style li::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    height: 20px;
+    width: 20px;
+    color: #08eaae;
+    background-color: #8c92b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.list-style li:hover {
+    border: 2px solid #7A85C1;
+    background: radial-gradient(#f1f2f4, #daf159);
+    transform: scale(1.05);
+}

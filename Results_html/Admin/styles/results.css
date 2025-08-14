@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #9CAFAA, #ffffff);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 45px;
+    color: #090909;
+    margin-bottom: 20px;
+}
+
+.results-card {
+    max-width: 400px;
+    background-color: rgb(234, 221, 231);
+    border: 2px solid #0b29d7;
+    border-radius: 16px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: auto;
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.results-card:hover {
+    border: 2px solid #7A85C1;
+    background: radial-gradient(rgb(183, 175, 227), #8cd2ee);
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #7A85C1;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+select:hover {
+    border: 2px solid #b6632b;
+    background-color: #fdf3e7;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #7A85C1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #b6632b;
+    transform: scale(1.05);
+}

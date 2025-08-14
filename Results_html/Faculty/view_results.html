@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Grades</title>
+    <link rel="stylesheet" href="styles/res.css">
+</head>
+<body>
+
+    <div class="grades-container">
+        <h1>Grades - Faculty Profile</h1>
+
+        <div class="filters">
+            <label for="course">Course:</label>
+            <select id="course">
+                <option>All Courses</option>
+                <option>Computer Science 101</option>
+                <option>Mathematics 201</option>
+                <option>Physics 301</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester">
+                <option>All Semesters</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+            </select>
+
+            <button class="btn">Filter</button>
+        </div>
+
+        <table class="grades-table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>STU101</td>
+                    <td> Suresh</td>
+                    <td>Computer Science 101</td>
+                    <td>Semester 1</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>STU102</td>
+                    <td>Hari</td>
+                    <td>Mathematics 201</td>
+                    <td>Semester 2</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>STU103</td>
+                    <td>Prem</td>
+                    <td>English 301</td>
+                    <td>Semester 1</td>
+                    <td>O</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

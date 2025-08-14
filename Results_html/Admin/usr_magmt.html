@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles/user.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Management</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="userrole">Role</label>
+                <select id="userrole" name="userrole">
+                    <option value="Admin">Admin</option>
+                    <option value="Organizer">Organizer</option>
+                    <option value="Viewer">Viewer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="userpassword">Password</label>
+                <input type="password" id="userpassword" name="userpassword" required>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn add">Register User</button>
+                
+            </div>
+        </form>
+        
+<h3>User Information</h3>
+<div class="user-table">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Raja</td>
+                <td>raja@gmail.com</td>
+                <td>Admin</td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Reddy</td>
+                <td>reddy@gmail.com</td>
+                <td>User</td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    </div>
+
+</body>
+</html>
